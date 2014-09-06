@@ -13,4 +13,4 @@
 ### Documentation
 
 - [Installation](Resources/doc/installation.md)
-- [Usage](Resources/doc/usage.md)
+- [Usage](Resources/doc/usage.md) (Coming soon!)

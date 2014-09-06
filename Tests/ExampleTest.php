@@ -1,8 +1,8 @@
 <?php
 
-namespace CL\PackageNameHere\Tests;
+namespace CL\PackageNameHereBundle\Tests;
 
-use CL\PackageNameHere\Example\ExampleClass;
+use CL\PackageNameHereBundle\Example\ExampleClass;
 
 class ExampleTest extends \PHPUnit_Framework_TestCase
 {
