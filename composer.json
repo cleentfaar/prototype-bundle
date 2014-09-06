@@ -1,0 +1,29 @@
+{
+  "name": "cleentfaar/package-name-here-bundle",
+  "description": "A PHP library that ...",
+  "keywords": ["foo", "bar"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cas Leentfaar",
+      "homepage": "https://github.com/cleentfaar",
+      "email": "info@casleentfaar.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "CL\\PackageNameHereBundle\\": ""
+    }
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "target-dir": "CL/PackageNameHereBundle"
+}
