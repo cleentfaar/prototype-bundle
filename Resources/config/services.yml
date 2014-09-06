@@ -1,0 +1,6 @@
+parameters:
+  cl_package_name_here.example.class: CL\Bundle\PackageNameHereBundle\Example\ExampleClass
+
+services:
+  cl_package_name_here.example:
+    class: %cl_package_name_here.example.class%

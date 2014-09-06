@@ -3,8 +3,9 @@
 namespace CL\Bundle\PackageNameHereBundle\Tests;
 
 use CL\Bundle\PackageNameHereBundle\Example\ExampleClass;
+use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
-class ExampleTest extends \PHPUnit_Framework_TestCase
+class FunctionalExampleTest extends KernelTestCase
 {
     /**
      * @var ExampleClass
@@ -14,9 +15,9 @@ class ExampleTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    public function setUp()
     {
-        $this->example = new ExampleClass();
+        $this->example = static::$kernel->getContainer()->get('cl_package_name_here.example');
     }
 
     /**
