@@ -3,9 +3,9 @@
 namespace CL\Bundle\PackageNameHereBundle\Tests;
 
 use CL\Bundle\PackageNameHereBundle\Example\ExampleClass;
-use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
+use Symfony\Bundle\FrameworkBundle\Tests\Functional\WebTestCase;
 
-class FunctionalExampleTest extends KernelTestCase
+class FunctionalExampleTest extends WebTestCase
 {
     /**
      * @var ExampleClass
@@ -17,7 +17,11 @@ class FunctionalExampleTest extends KernelTestCase
      */
     public function setUp()
     {
-        $this->example = static::$kernel->getContainer()->get('cl_package_name_here.example');
+        //start the symfony kernel
+        $kernel = static::createKernel();
+        $kernel->boot();
+
+        $this->example = $kernel->getContainer()->get('cl_package_name_here.example');
     }
 
     /**
