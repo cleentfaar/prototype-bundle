@@ -19,5 +19,17 @@ class CLPackageNameExtension extends Extension
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
+
+        $this->setParameters($container, $config);
+    }
+
+    /**
+     * @param ContainerBuilder $container
+     * @param array            $config
+     */
+    protected function setParameters(ContainerBuilder $container, array $config)
+    {
+        $container->setParameter('apple', 'pear');
+        $container->setParameter('foo', $config['foo']);
     }
 }

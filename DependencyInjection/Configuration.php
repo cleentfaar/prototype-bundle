@@ -14,6 +14,13 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('cl_package_name_here');
+        $rootNode
+            ->isRequired()
+            ->children()
+                ->scalarNode('foo')
+                    ->isRequired()
+                ->end()
+            ->end();
 
         return $treeBuilder;
     }
