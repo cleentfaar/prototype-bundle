@@ -1,6 +1,6 @@
 # PackageNameHereBundle [![License](https://poser.pugx.org/cleentfaar/package-name-here-bundle/license.svg)](https://packagist.org/packages/cleentfaar/package-name-here-bundle)
 
-(Small introduction here)
+...
 
 [![Build Status](https://secure.travis-ci.org/cleentfaar/package-name-here-bundle.svg)](http://travis-ci.org/cleentfaar/package-name-here-bundle)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/cleentfaar/package-name-here-bundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/cleentfaar/package-name-here-bundle/?branch=master)
