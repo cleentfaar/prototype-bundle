@@ -1,8 +1,8 @@
 {
   "name": "cleentfaar/package-name-here-bundle",
-  "description": "A PHP library that ...",
+  "description": "A Symfony bundle that ...",
   "keywords": ["foo", "bar"],
-  "type": "library",
+  "type": "symfony-bundle",
   "license": "MIT",
   "authors": [
     {
@@ -13,8 +13,7 @@
   ],
   "require": {
     "php": ">=5.4",
-    "symfony/finder": "~2.5",
-    "symfony/framework-bundle": "~2.5"
+    "symfony/framework-bundle": "~2.6"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.2",

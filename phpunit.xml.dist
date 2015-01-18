@@ -7,7 +7,7 @@
          bootstrap="vendor/autoload.php"
 >
     <testsuites>
-        <testsuite name="CL PackageNameHereBundle Test Suite">
+        <testsuite name="PackageNameHereBundle Test Suite">
             <directory>./Tests/</directory>
         </testsuite>
     </testsuites>
